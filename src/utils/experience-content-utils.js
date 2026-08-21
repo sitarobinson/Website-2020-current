@@ -15,7 +15,7 @@ export const educationContent = [
   {
     school: "University of Maryland",
     degree: "MBA",
-    year: "Class of 2026",
+    year: "Graduated August 2026",
     logo: UMDLogo,
   },
   {
