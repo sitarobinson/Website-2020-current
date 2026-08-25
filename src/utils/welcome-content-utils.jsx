@@ -1,7 +1,7 @@
 //This file contains the content used for the welcome section of the application.  Rendered in welcome-content.js
 
 import { lazy, Suspense } from "react";
-import { SkillsCard, Skeleton } from "../components/export-components";
+import { SkillsCard, Skeleton, WhiteCard } from "../components/export-components";
 import { travelLocations } from "./travel-locations";
 
 //Leaflet is a large dependency, so the map is code split out of the main bundle
@@ -12,12 +12,12 @@ export const welcomeContent = [
   {
     header: "About Me",
     textcontent: (
-      <div>
+      <WhiteCard>
         <p>
           I'm a Lead Software Engineer who has spent six years building web applications end to end,
           from React frontends to the APIs behind them. For the past four years I've been at Booz
           Allen Hamilton working on Recreation.gov, the platform people use to discover and book
-          campsites, permits, and tours across national parks and federal lands. Before that, two
+          campsites, permits, and tours across national parks and federal lands. Before that, I spent two
           years at Vanguard building the Java and Spring APIs supporting their investment platform.
         </p>
         <p>
@@ -29,7 +29,7 @@ export const welcomeContent = [
           photography, quilting, playing Scrabble and traveling around the world. I am a Northern
           Virginia/Metro D.C. native.
         </p>
-      </div>
+      </WhiteCard>
     ),
   },
   {
