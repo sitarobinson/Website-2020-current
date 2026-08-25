@@ -11,8 +11,26 @@ const TravelMap = lazy(() => import("../components/reusable-components/travel-ma
 export const welcomeContent = [
   {
     header: "About Me",
-    textcontent:
-      "My name is Sita Robinson. I currently work as a Software Developer at Booz Allen Hamilton.  Prior to Booz Allen, I worked at Vanguard for two years.  I graduated from Drexel University with a BS in Data Science and minor in Computer Science in 2020. Some of my hobbies include programming, crochet (amigurumi), landscape photography, quilting, playing Scrabble and traveling around the world. I am a Northern Virginia/Metro D.C. native.",
+    textcontent: (
+      <div>
+        <p>
+          I'm a Lead Software Engineer who has spent six years building web applications end to end,
+          from React frontends to the APIs behind them. For the past four years I've been at Booz
+          Allen Hamilton working on Recreation.gov, the platform people use to discover and book
+          campsites, permits, and tours across national parks and federal lands. Before that, two
+          years at Vanguard building the Java and Spring APIs supporting their investment platform.
+        </p>
+        <p>
+          I hold a BS in Data Science with a CS minor from Drexel University and an MBA from the
+          University of Maryland.
+        </p>
+        <p>
+          Outside of work, my hobbies include building side projects, crochet (amigurumi), landscape
+          photography, quilting, playing Scrabble and traveling around the world. I am a Northern
+          Virginia/Metro D.C. native.
+        </p>
+      </div>
+    ),
   },
   {
     header: "Skills",
