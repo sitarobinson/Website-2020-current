@@ -7,30 +7,25 @@
     "react": "^18.00.0",
     "react-dom": "^18.00.0",
     "react-leaflet": "^4.2.1",
-    "react-scripts": "5.0.0",
     "style-it": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "postbuild": "node scripts/prerender.js",
+    "preview": "vite preview",
     "lint": "eslint src",
     "thumbs": "bash scripts/generate-thumbs.sh"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-react": "^6.1.0",
+    "eslint": "^10.9.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.4",
+    "globals": "^17.11.0",
+    "vite": "^8.2.2"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "type": "module"
 }

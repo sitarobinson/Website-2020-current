@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Software developer at Booz Allen Hamilton building React frontends for Recreation.gov. Previously Vanguard. Drexel BS in Data Science, UMD MBA." />
+    <link rel="canonical" href="https://sitarobinson.com/" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Sita Robinson" />
+    <meta property="og:title" content="Sita Robinson — Software Developer" />
+    <meta property="og:description" content="Software developer at Booz Allen Hamilton building React frontends for Recreation.gov. Previously Vanguard. Drexel BS in Data Science, UMD MBA." />
+    <meta property="og:url" content="https://sitarobinson.com/" />
+    <meta property="og:image" content="https://sitarobinson.com/me.png" />
+
+    <!-- me.png is 200x200, which suits a small square card but not a wide one. -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sita Robinson — Software Developer" />
+    <meta name="twitter:description" content="Software developer at Booz Allen Hamilton building React frontends for Recreation.gov. Previously Vanguard. Drexel BS in Data Science, UMD MBA." />
+    <meta name="twitter:image" content="https://sitarobinson.com/me.png" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preload" as="image" href="/me.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" /></noscript>
+    <title>Sita Robinson</title>
+
+    <!-- Hides the prerendered crawler fallback in #sr-content without hiding it
+         from assistive tech.  Inlined so it applies before the CSS bundle loads. -->
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sita Robinson",
+        "jobTitle": "Software Developer",
+        "url": "https://sitarobinson.com/",
+        "image": "https://sitarobinson.com/me.png",
+        "sameAs": [
+          "https://github.com/pinkdragon1000",
+          "https://www.linkedin.com/in/sitarobinson/"
+        ],
+        "worksFor": { "@type": "Organization", "name": "Booz Allen Hamilton" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "University of Maryland" },
+          { "@type": "CollegeOrUniversity", "name": "Drexel University" }
+        ],
+        "knowsAbout": [
+          "React", "Redux", "JavaScript", "TypeScript", "Java",
+          "Spring Framework", "Python", "AWS", "Web Accessibility"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
+</html>
