@@ -23,6 +23,14 @@ a {
 }
 
 p {
+  font-size: 1rem;
+}
+
+
+.subheader,
+.experience-date,
+.degree,
+.year {
   font-size: 1.5rem;
 }
 
