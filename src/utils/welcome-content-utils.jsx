@@ -37,24 +37,41 @@ export const welcomeContent = [
     textcontent: (
       <div className="column">
         <div className="row">
-          <SkillsCard category="Frameworks/Libraries" skills="React.js, Spring Framework, Flask, Next.js" />
-          <SkillsCard category="State Management" skills="Redux, TanStack Query" />
+          <SkillsCard
+            category="Frontend"
+            groups={[
+              { label: "Languages", skills: "HTML/CSS, SCSS, JavaScript, Typescript" },
+              { label: "Frameworks", skills: "React.js, Next.js" },
+              { label: "State & Data", skills: "Redux, TanStack Query" },
+              { label: "Build", skills: "Webpack, Vite" },
+            ]}
+          />
+          <SkillsCard
+            category="Backend"
+            groups={[
+              { label: "Languages", skills: "Java, Python" },
+              { label: "Frameworks", skills: "Spring Framework, Flask" },
+              { label: "Databases", skills: "SQL, Firebase" },
+              { label: "Build", skills: "Maven" },
+            ]}
+          />
         </div>
         <div className="row">
-          <SkillsCard category="Languages" skills="HTML/CSS, SCSS, JavaScript, Typescript, Node.js, Python, Java" />
-          <SkillsCard category="Frontend Build Systems" skills="Webpack, Vite" />
-        </div>
-        <div className="row">
-          <SkillsCard category="Databases" skills="SQL, Firebase, MongoDB Atlas" />
-          <SkillsCard category="Deploy Tools" skills="Jenkins, ArgoCD, Github Actions, Bamboo" />
-        </div>
-        <div className="row">
-          <SkillsCard category="Monitoring Tools" skills="Splunk, Honeycomb" />
-          <SkillsCard category="Cloud Computing" skills="AWS, Google Cloud" />
-        </div>
-        <div className="row">
-          <SkillsCard category="AI Tools" skills="Claude Code, Codex" />
-          <SkillsCard category="UX Collaboration & Prototyping" skills="Figma, Responsive Design, Accessibility" />
+          <SkillsCard
+            category="Infrastructure & Operations"
+            groups={[
+              { label: "Deploy", skills: "Jenkins, ArgoCD, Github Actions, Bamboo" },
+              { label: "Cloud", skills: "AWS, Google Cloud" },
+              { label: "Monitoring", skills: "Splunk, Honeycomb" },
+            ]}
+          />
+          <SkillsCard
+            category="Design & Tooling"
+            groups={[
+              { label: "Design & UX", skills: "Figma, Responsive Design, Accessibility" },
+              { label: "AI", skills: "Claude Code, Codex" },
+            ]}
+          />
         </div>
       </div>
     ),
