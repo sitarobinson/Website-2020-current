@@ -41,8 +41,8 @@ export const welcomeContent = [
           <SkillsCard category="State Management" skills="Redux, TanStack Query" />
         </div>
         <div className="row">
+          <SkillsCard category="Languages" skills="HTML/CSS, SCSS, JavaScript, Typescript, Node.js, Python, Java" />
           <SkillsCard category="Frontend Build Systems" skills="Webpack, Vite" />
-          <SkillsCard category="Languages" skills="HTML/CSS, SCSS, JavaScript, Node.js, Python, Java, Typescript" />
         </div>
         <div className="row">
           <SkillsCard category="Databases" skills="SQL, Firebase, MongoDB Atlas" />
@@ -54,7 +54,7 @@ export const welcomeContent = [
         </div>
         <div className="row">
           <SkillsCard category="AI Tools" skills="Claude Code, Codex" />
-          <SkillsCard category="UX Collaboration & Prototyping" skills="Figma, Responsive Design, Accessibility (WCAG)" />
+          <SkillsCard category="UX Collaboration & Prototyping" skills="Figma, Responsive Design, Accessibility" />
         </div>
       </div>
     ),
