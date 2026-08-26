@@ -38,26 +38,23 @@ export const welcomeContent = [
       <div className="column">
         <div className="row">
           <SkillsCard category="Frameworks/Libraries" skills="React.js, Spring Framework, Flask, Next.js" />
-          <SkillsCard category="State Management" skills="Redux" />
+          <SkillsCard category="State Management" skills="Redux, TanStack Query" />
         </div>
         <div className="row">
-          <SkillsCard category="JS Build Systems" skills="Webpack, Vite" />
+          <SkillsCard category="Frontend Build Systems" skills="Webpack, Vite" />
           <SkillsCard category="Languages" skills="HTML/CSS, SCSS, JavaScript, Node.js, Python, Java, Typescript" />
         </div>
         <div className="row">
           <SkillsCard category="Databases" skills="SQL, Firebase, MongoDB Atlas" />
-          <SkillsCard category="Tools" skills="Jupyter Notebook, Tableau" />
+          <SkillsCard category="Deploy Tools" skills="Jenkins, ArgoCD, Github Actions, Bamboo" />
         </div>
         <div className="row">
           <SkillsCard category="Monitoring Tools" skills="Splunk, Honeycomb" />
           <SkillsCard category="Cloud Computing" skills="AWS, Google Cloud" />
         </div>
         <div className="row">
-          <SkillsCard category="AI Tools" skills="Github Copilot, Amazon Q, Cursor" />
-          <SkillsCard category="UX Collaboration & Prototyping" skills="Figma, MockFlow, Responsive Design, Accessibility (WCAG)" />
-        </div>
-        <div className="row">
-          <SkillsCard category="Other" skills="Jenkins, ArgoCD, Github Actions, Bamboo, Git, Bitbucket, Java Debugger, Chrome Dev Tools" />
+          <SkillsCard category="AI Tools" skills="Claude Code, Codex" />
+          <SkillsCard category="UX Collaboration & Prototyping" skills="Figma, Responsive Design, Accessibility (WCAG)" />
         </div>
       </div>
     ),
