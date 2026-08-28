@@ -25,7 +25,7 @@ export default function TravelMap({ locations }) {
 
   // Responsive zoom level based on screen width
   const isMobile = window.innerWidth <= 768;
-  const zoomLevel = isMobile ? 1.5 : 2.5;
+  const zoomLevel = isMobile ? 1 : 2.5;
   const styles = `
     .map-legend {
       margin-top: 1rem;
