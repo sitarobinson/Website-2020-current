@@ -1,5 +1,6 @@
 import Style from "style-it";
 import { WhiteCard, Stack, Pill } from "../export-components";
+import TestimonialQuote from "./testimonial-quote";
 
 // Calculate total duration across all roles at the company
 const calculateTotalDuration = (roles) => {
@@ -98,9 +99,24 @@ export default function ExperienceBox(props) {
       margin-bottom: 0.5rem;
       font-size: 1rem;
     }
+
+    .experience-testimonials {
+      border-top: 0.0625rem solid var(--light-grey, rgba(0, 0, 0, 0.1));
+      padding-top: 1rem;
+    }
+
+    .experience-testimonials-header {
+      color: var(--dark-grey);
+      font-size: 0.9rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0 0 0.75rem 0;
+    }
     `;
 
   const totalDuration = calculateTotalDuration(props.roles);
+  const testimonials = props.testimonials || [];
 
   return Style.it(
     styles,
@@ -126,6 +142,24 @@ export default function ExperienceBox(props) {
               <div>{role.description}</div>
             </div>
           ))}
+          {/* The recommendations for this employer live with the job they are
+              about rather than in a section of their own. */}
+          {testimonials.length > 0 && (
+            <div className="experience-testimonials">
+              <p className="experience-testimonials-header">
+                {testimonials.length === 1 ? "Recommendation" : "Recommendations"}
+              </p>
+              <Stack spacing="large">
+                {testimonials.map((testimonial, index) => (
+                  <TestimonialQuote
+                    key={index}
+                    testimonial={testimonial}
+                    employer={props.linktext}
+                  />
+                ))}
+              </Stack>
+            </div>
+          )}
         </Stack>
       </div>
     </WhiteCard>

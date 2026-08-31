@@ -15,9 +15,6 @@ const ProjectsContent = lazy(() =>
 const PhotosContent = lazy(() =>
   import("../components/page-content/photos-content")
 );
-const TestimonialContent = lazy(() =>
-  import("../components/page-content/testimonial-content")
-);
 
 //Data used for the header.
 export const headerData = {
@@ -54,11 +51,6 @@ export const navbarOptions = [
     name: "Photos",
     component: <PhotosContent />,
     fallback: <PhotoGridSkeleton />,
-  },
-  {
-    name: "Testimonials",
-    component: <TestimonialContent />,
-    fallback: <ContentSkeleton />,
   },
 ];
 

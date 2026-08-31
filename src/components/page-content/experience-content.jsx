@@ -1,6 +1,7 @@
 import Style from "style-it";
 import { CardSubcontent, ExperienceBox, EducationCard, Stack } from "../export-components";
 import { groupByConsecutiveProperty } from "../../utils/array-utils";
+import { testimonialsByEmployer } from "../../utils/testimonial-utils";
 
 import {
   educationContent,
@@ -42,6 +43,7 @@ export default function ExperienceContent() {
             link={group[0].link}
             logo={group[0].logo}
             showDuration={true}
+            testimonials={testimonialsByEmployer[group[0].linktext]}
           />
         ))}
       </Stack>

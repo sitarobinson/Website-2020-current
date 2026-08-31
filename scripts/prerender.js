@@ -29,13 +29,12 @@ const server = await createServer({
 });
 
 try {
-  const [welcomeUtils, travel, experience, projects, testimonials] =
+  const [welcomeUtils, travel, experience, projects] =
     await Promise.all([
       server.ssrLoadModule("/src/utils/welcome-content-utils.jsx"),
       server.ssrLoadModule("/src/utils/travel-locations.js"),
       server.ssrLoadModule("/src/components/page-content/experience-content.jsx"),
       server.ssrLoadModule("/src/components/page-content/projects-content.jsx"),
-      server.ssrLoadModule("/src/components/page-content/testimonial-content.jsx"),
     ]);
 
   const parts = [];
@@ -71,7 +70,6 @@ try {
 
   parts.push(section("Experience", React.createElement(experience.default)));
   parts.push(section("Projects", React.createElement(projects.default)));
-  parts.push(section("Testimonials", React.createElement(testimonials.default)));
 
   const block =
     `<div id="sr-content" class="sr-only">` +

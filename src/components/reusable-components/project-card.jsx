@@ -1,5 +1,5 @@
 import Style from "style-it";
-import { Icon, WhiteCard } from "../export-components";
+import { WhiteCard } from "../export-components";
 
 export default function ProjectCard(props) {
   const styles = `
@@ -32,9 +32,6 @@ export default function ProjectCard(props) {
     styles,
     <WhiteCard className="project-card">
       <article>
-        {props.showQuote && (
-          <Icon name="quote" fill="var(--dark-purple)" width="3" height="3" opacity="0.3" aria-hidden="true" />
-        )}
         <h2>{props.title}</h2>
         <div className="handleOverflow">
           {props.description}
