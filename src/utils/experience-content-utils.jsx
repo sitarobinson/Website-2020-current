@@ -1,14 +1,13 @@
 //This file contains the content used for the experience section of the application (education, work/volunteer experience).  Rendered in experience-content.js.
 
-
-import UMDLogo from '../experience-images/schoolImages/UMD.jpg';
-import DrexelLogo from '../experience-images/schoolImages/Drexel.jpg';
-import ComcastLogo from '../experience-images/workExpImages/Comcast.jpg';
-import Imagine360Logo from '../experience-images/workExpImages/Imagine360.jpg';
-import DrexelCCILogo from '../experience-images/workExpImages/DrexelCCI.jpg';
-import VanguardLogo from '../experience-images/workExpImages/Vanguard.jpg';
-import BoozAllenLogo from '../experience-images/workExpImages/BoozAllen.jpg';
-import DrexelWiCSLogo from '../experience-images/volunteerImages/WiCS.jpg';
+import UMDLogo from "../experience-images/schoolImages/UMD.jpg";
+import DrexelLogo from "../experience-images/schoolImages/Drexel.jpg";
+import ComcastLogo from "../experience-images/workExpImages/Comcast.jpg";
+import Imagine360Logo from "../experience-images/workExpImages/Imagine360.jpg";
+import DrexelCCILogo from "../experience-images/workExpImages/DrexelCCI.jpg";
+import VanguardLogo from "../experience-images/workExpImages/Vanguard.jpg";
+import BoozAllenLogo from "../experience-images/workExpImages/BoozAllen.jpg";
+import DrexelWiCSLogo from "../experience-images/volunteerImages/WiCS.jpg";
 
 export const educationContent = [
   {
@@ -25,7 +24,11 @@ export const educationContent = [
   },
 ];
 
-export const experienceHeader = ["Work Experience", "Volunteer Experience"];
+export const experienceHeader = [
+  "Work Experience",
+  "Early Work Experience",
+  "Volunteer Experience",
+];
 
 export const workExperienceContent = [
   {
@@ -44,11 +47,21 @@ export const workExperienceContent = [
     logo: BoozAllenLogo,
     description: (
       <ul className="experience-details">
-        <li>Developed frontend for the Recreation.gov customer and administrative applications using React and Redux. Recreation.gov is an e-commerce web application
-          that allows you to plan trips across the United States, including federally managed parks, forests, monuments, and waterways.</li>
-        <li>Worked across the project to develop new features, fixed bugs in the application, performed unit and integration testing using React Testing Library, and deployed
-          the app using ArgoCD. Handle service calls from Go APIs using Axios and Redux. Handle rollouts using LaunchDarkly flags. Implemented and updated features
-          using Figma mockups from the design team.</li>
+        <li>
+          Developed frontend for the Recreation.gov customer and administrative
+          applications using React and Redux. Recreation.gov is an e-commerce
+          web application that allows you to plan trips across the United
+          States, including federally managed parks, forests, monuments, and
+          waterways.
+        </li>
+        <li>
+          Worked across the project to develop new features, fixed bugs in the
+          application, performed unit and integration testing using React
+          Testing Library, and deployed the app using ArgoCD. Handle service
+          calls from Go APIs using Axios and Redux. Handle rollouts using
+          LaunchDarkly flags. Implemented and updated features using Figma
+          mockups from the design team.
+        </li>
         <li>Worked with a mixture of functional and class components.</li>
         <li>Styled components using SCSS</li>
       </ul>
@@ -75,20 +88,20 @@ export const workExperienceContent = [
     description: (
       <ul className="experience-details">
         <li>
-          Developed Java Spring web services that power the Vanguard mobile and web
-          customer-facing investment platform.
+          Developed Java Spring web services that power the Vanguard mobile and
+          web customer-facing investment platform.
         </li>
         <li>
-          Worked with team to migrate web services from Pivotal Cloud Foundry to Amazon
-          (AWS) ECS.
+          Worked with team to migrate web services from Pivotal Cloud Foundry to
+          Amazon (AWS) ECS.
         </li>
         <li>
-          Performed unit and integration testing using the Junit, Mockito, and Cucumber
-          frameworks.
+          Performed unit and integration testing using the Junit, Mockito, and
+          Cucumber frameworks.
         </li>
         <li>
-          Provided developer support for consumers of our web services. Analyzed web
-          service logs using Splunk and Honeycomb.
+          Provided developer support for consumers of our web services. Analyzed
+          web service logs using Splunk and Honeycomb.
         </li>
         <li>
           Worked in a DevOps environment developing, deploying, supporting and
@@ -97,6 +110,9 @@ export const workExperienceContent = [
       </ul>
     ),
   },
+];
+
+export const earlyWorkExperienceContent = [
   {
     title: "Data Science Teaching Assistant",
     date: "April 6, 2020 - June 11, 2020",
@@ -106,9 +122,9 @@ export const workExperienceContent = [
     description: (
       <ul className="experience-details">
         <li>
-          Held office hours for 5 hours a week to answer questions about assignments in a
-          number of topics including Python basics and libraries for data analysis (numpy,
-          pandas, and matplotlib){" "}
+          Held office hours for 5 hours a week to answer questions about
+          assignments in a number of topics including Python basics and
+          libraries for data analysis (numpy, pandas, and matplotlib){" "}
         </li>
         <li>Graded assignments and provided feedback</li>
       </ul>
@@ -126,11 +142,13 @@ export const workExperienceContent = [
         <li>Developed a machine learning model to predict customer churn.</li>
         <li> Leveraged Python packages including Pandas.</li>
         <li>
-          Used the Microsoft R package MicrosoftML to construct fast forest, decision
-          trees, decision forests, and logistic regression models. Used d3.js for
-          visualization.
+          Used the Microsoft R package MicrosoftML to construct fast forest,
+          decision trees, decision forests, and logistic regression models. Used
+          d3.js for visualization.
         </li>
-        <li>Preprocessed and transformed healthcare data using Python and R. </li>
+        <li>
+          Preprocessed and transformed healthcare data using Python and R.{" "}
+        </li>
         <li>Developed tools in Python for streamlining ETL processes.</li>
         <li>Presented at a machine learning workshop on a bi-weekly basis</li>
         <li>Developed data visualizations using Tableau.</li>
@@ -146,12 +164,13 @@ export const workExperienceContent = [
     description: (
       <ul className="experience-details">
         <li>
-          Developed and enhanced a web-based system used to manage operational IP video
-          delivery infrastructure.
+          Developed and enhanced a web-based system used to manage operational
+          IP video delivery infrastructure.
         </li>
         <li>Backend development using Ruby on Rails with MySQL.</li>
         <li>
-          Participated in Comcast's Agile software development processes and lifecycle.
+          Participated in Comcast's Agile software development processes and
+          lifecycle.
         </li>
       </ul>
     ),
@@ -168,15 +187,15 @@ export const volunteerExperienceContent = [
     description: (
       <ul className="experience-details">
         <li>
-          Planned and moderated 30+ events including tech talks, panels, and social
-          events.
+          Planned and moderated 30+ events including tech talks, panels, and
+          social events.
         </li>
         <li> Helped bring in more than $2000 in sponsorship</li>
         <li> Built relationships with members and managed other officers </li>
         <li>
-          Applied for conference funding and registered WiCS members for the ACM Capital
-          Region Celebration of Women in Computing (CAPWIC) 2020 conference. Later
-          cancelled due to COVID.
+          Applied for conference funding and registered WiCS members for the ACM
+          Capital Region Celebration of Women in Computing (CAPWIC) 2020
+          conference. Later cancelled due to COVID.
         </li>
       </ul>
     ),
@@ -190,20 +209,20 @@ export const volunteerExperienceContent = [
     description: (
       <ul className="experience-details">
         <li>
-          Kept records of all transactions/deposits in accounts, managed the budget,
-          reported the financial situation to other officers. Put in purchase requests for
-          items to be purchased out of accounts.
+          Kept records of all transactions/deposits in accounts, managed the
+          budget, reported the financial situation to other officers. Put in
+          purchase requests for items to be purchased out of accounts.
         </li>
         <li>
-          Applied for funding through various sources via fundraisers and grants. Applied
-          for conference funding and registered WiCS members for the ACM Philadelphia
-          Region Celebration of Women in Computing (PHICWIC) 2018 conference and also for
-          the ACM CAPWIC 2019 conference.
+          Applied for funding through various sources via fundraisers and
+          grants. Applied for conference funding and registered WiCS members for
+          the ACM Philadelphia Region Celebration of Women in Computing
+          (PHICWIC) 2018 conference and also for the ACM CAPWIC 2019 conference.
         </li>
         <li>
-          Led a fundraising committee of five WiCS members who assisted in compiling
-          corporate sponsorship contacts and also helped with pr for fundraisers. We
-          brought in more than $200 from fundraisers.
+          Led a fundraising committee of five WiCS members who assisted in
+          compiling corporate sponsorship contacts and also helped with pr for
+          fundraisers. We brought in more than $200 from fundraisers.
         </li>
       </ul>
     ),

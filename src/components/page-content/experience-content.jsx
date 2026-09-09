@@ -1,11 +1,17 @@
 import Style from "style-it";
-import { CardSubcontent, ExperienceBox, EducationCard, Stack } from "../export-components";
+import {
+  CardSubcontent,
+  ExperienceBox,
+  EducationCard,
+  Stack,
+} from "../export-components";
 import { groupByConsecutiveProperty } from "../../utils/array-utils";
 import { testimonialsByEmployer } from "../../utils/testimonial-utils";
 
 import {
   educationContent,
   experienceHeader,
+  earlyWorkExperienceContent,
   workExperienceContent,
   volunteerExperienceContent,
 } from "../../utils/experience-content-utils";
@@ -35,32 +41,56 @@ export default function ExperienceContent() {
 
       <CardSubcontent header={experienceHeader[0]} />
       <Stack spacing="large">
-        {groupByConsecutiveProperty(workExperienceContent, "linktext").map((group, groupIndex) => (
-          <ExperienceBox
-            key={groupIndex}
-            roles={group}
-            linktext={group[0].linktext}
-            link={group[0].link}
-            logo={group[0].logo}
-            showDuration={true}
-            testimonials={testimonialsByEmployer[group[0].linktext]}
-          />
-        ))}
+        {groupByConsecutiveProperty(workExperienceContent, "linktext").map(
+          (group, groupIndex) => (
+            <ExperienceBox
+              key={groupIndex}
+              roles={group}
+              linktext={group[0].linktext}
+              link={group[0].link}
+              logo={group[0].logo}
+              showDuration={true}
+              testimonials={testimonialsByEmployer[group[0].linktext]}
+            />
+          ),
+        )}
       </Stack>
 
       <CardSubcontent header={experienceHeader[1]} />
+      <p>
+        Foundational co-ops, internships, and roles from the start of my career.
+      </p>
       <Stack spacing="large">
-        {groupByConsecutiveProperty(volunteerExperienceContent, "linktext").map((group, groupIndex) => (
-          <ExperienceBox
-            key={groupIndex}
-            roles={group}
-            linktext={group[0].linktext}
-            link={group[0].link}
-            logo={group[0].logo}
-            showDuration={false}
-          />
-        ))}
+        {groupByConsecutiveProperty(earlyWorkExperienceContent, "linktext").map(
+          (group, groupIndex) => (
+            <ExperienceBox
+              key={groupIndex}
+              roles={group}
+              linktext={group[0].linktext}
+              link={group[0].link}
+              logo={group[0].logo}
+              showDuration={true}
+              testimonials={testimonialsByEmployer[group[0].linktext]}
+            />
+          ),
+        )}
       </Stack>
-    </div>
+
+      <CardSubcontent header={experienceHeader[2]} />
+      <Stack spacing="large">
+        {groupByConsecutiveProperty(volunteerExperienceContent, "linktext").map(
+          (group, groupIndex) => (
+            <ExperienceBox
+              key={groupIndex}
+              roles={group}
+              linktext={group[0].linktext}
+              link={group[0].link}
+              logo={group[0].logo}
+              showDuration={false}
+            />
+          ),
+        )}
+      </Stack>
+    </div>,
   );
 }
