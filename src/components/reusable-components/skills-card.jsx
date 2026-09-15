@@ -22,7 +22,7 @@ export default function SkillsCard({ category, skills, groups }) {
       margin: 0 0 0.5rem;
       font-size: 0.95rem;
       font-weight: 600;
-      color: var(--dark-grey);
+      color: var(--muted);
     }
   `;
 

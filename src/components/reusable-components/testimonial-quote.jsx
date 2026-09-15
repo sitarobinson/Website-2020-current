@@ -2,7 +2,7 @@ import Style from "style-it";
 import { Icon, SocialBox } from "../export-components";
 
 const socialBoxProps = {
-  fill: "var(--dark-purple)",
+  fill: "var(--heading)",
   width: 1.25,
   height: 1.25,
 };
@@ -19,7 +19,7 @@ export default function TestimonialQuote({ testimonial, employer }) {
   const styles = `
     .testimonial-quote {
       margin: 0 0 0 0.75rem;
-      border-left: 0.1875rem solid var(--light-purple);
+      border-left: 0.1875rem solid var(--accent);
       padding-left: 0.75rem;
     }
 
@@ -57,7 +57,7 @@ export default function TestimonialQuote({ testimonial, employer }) {
     }
 
     .testimonial-attribution cite {
-      color: var(--brown);
+      color: var(--text);
       font-style: normal;
       font-weight: bold;
       font-size: 1rem;
@@ -65,7 +65,7 @@ export default function TestimonialQuote({ testimonial, employer }) {
 
     .testimonial-attribution .testimonial-relationship {
       display: block;
-      color: var(--dark-grey);
+      color: var(--muted);
       font-size: 0.9rem;
       margin-top: 0.15rem;
     }
@@ -74,7 +74,7 @@ export default function TestimonialQuote({ testimonial, employer }) {
       width: 0.0625rem;
       align-self: stretch;
       margin: 0.1rem 0;
-      background: var(--dark-grey);
+      background: var(--muted);
     }
 
     .testimonial-attribution .social-box-container {
@@ -91,7 +91,7 @@ export default function TestimonialQuote({ testimonial, employer }) {
         <span className="testimonial-quote-icon">
           <Icon
             name="quote"
-            fill="var(--dark-purple)"
+            fill="var(--heading)"
             width="1.25"
             height="1.25"
             opacity="0.3"

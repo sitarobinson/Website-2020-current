@@ -24,6 +24,7 @@ export {
   SkeletonCard,
   PhotoGridSkeleton,
 } from "./reusable-components/skeleton";
+export { default as ThemeToggle } from "./reusable-components/theme-toggle";
 //Page Content and TravelMap are intentionally not re-exported here.  They are
 //code split via React.lazy (see app-utils.js and welcome-content-utils.js), and
 //re-exporting them from this barrel would pull them back into the main bundle.

@@ -3,7 +3,7 @@ import Style from "style-it";
 export default function Card(props) {
   const styles = `
     .content-text {
-      background-color: var(--grey);
+      background-color: var(--panel);
       height: 100%;
       min-height: 26rem;
       width: 85vw;

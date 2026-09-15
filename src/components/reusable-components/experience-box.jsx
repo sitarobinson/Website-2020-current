@@ -68,7 +68,7 @@ export default function ExperienceBox(props) {
     }
 
     .experience-link {
-      color: var(--light-purple);
+      color: var(--accent);
       text-decoration: none;
       font-size: 1.5rem;
       font-weight: bold;
@@ -84,7 +84,7 @@ export default function ExperienceBox(props) {
     }
 
     .experience-date {
-      color: var(--dark-grey);
+      color: var(--muted);
       font-weight: 400;
       font-size: 1rem;
       margin: 0.25rem 0 0.75rem 0;
@@ -101,12 +101,12 @@ export default function ExperienceBox(props) {
     }
 
     .experience-testimonials {
-      border-top: 0.0625rem solid var(--light-grey, rgba(0, 0, 0, 0.1));
+      border-top: 0.0625rem solid var(--light-grey);
       padding-top: 1rem;
     }
 
     .experience-testimonials-header {
-      color: var(--dark-grey);
+      color: var(--muted);
       font-size: 0.9rem;
       font-weight: bold;
       letter-spacing: 0.05em;

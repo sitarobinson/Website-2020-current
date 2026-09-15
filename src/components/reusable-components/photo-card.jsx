@@ -66,7 +66,7 @@ function PhotoCard(props) {
     }
 
     .photo-card:focus {
-        outline: 2px solid var(--light-purple);
+        outline: 2px solid var(--accent);
         outline-offset: 2px;
         border-radius: 1rem;
     }

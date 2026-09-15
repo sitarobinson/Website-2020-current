@@ -31,14 +31,14 @@ export default function NavbarandContent(props) {
 
     .tab-list-active {
         font-weight: 600;
-        border-bottom: 0.2rem solid var(--light-purple);
+        border-bottom: 0.2rem solid var(--accent);
         border-radius: 0.4rem;
-        color: var(--dark-purple);
+        color: var(--heading);
     }
 
     .tab-list-active::before {
         content: "✿ ";
-        color: var(--light-purple);
+        color: var(--accent);
     }
     `;
 

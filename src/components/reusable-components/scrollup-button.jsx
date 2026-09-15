@@ -44,7 +44,7 @@ export default function ScrollUpButton(props) {
       background="var(--gradient)"
       hoverBackground="var(--gradient)"
       color="var(--white)"
-      boxShadow="0.125rem 0.125rem 0.1875rem var(--med-grey)"
+      boxShadow="0.125rem 0.125rem 0.1875rem rgba(0, 0, 0, 0.27)"
       zIndex={1000}
       ariaLabel="Scroll to top"
       className={`scrollup-button ${!visible ? 'scrollup-button-hidden' : ''}`}

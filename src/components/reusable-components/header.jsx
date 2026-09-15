@@ -1,5 +1,5 @@
 import Style from "style-it";
-import { Stack } from "../export-components";
+import { Stack, ThemeToggle } from "../export-components";
 
 export default function Header(props) {
   const styles = `
@@ -19,9 +19,10 @@ export default function Header(props) {
     }
 
     .gradient-bg {
+      position: relative;
       padding: 2rem 1.5rem;
       min-width: 38.625rem;
-      background-image: radial-gradient(circle at 38% 55%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 23%,transparent 23%, transparent 78%,transparent 78%, transparent 100%),radial-gradient(circle at 34% 85%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 7%,transparent 7%, transparent 41%,transparent 41%, transparent 100%),radial-gradient(circle at 0% 36%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 2%,transparent 2%, transparent 59%,transparent 59%, transparent 100%),radial-gradient(circle at 42% 37%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 6%,transparent 6%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 48% 39%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 8%,transparent 8%, transparent 90%,transparent 90%, transparent 100%), var(--gradient);
+      background-image: radial-gradient(circle at 38% 55%, var(--hero-circle) 0%, var(--hero-circle) 23%,transparent 23%, transparent 78%,transparent 78%, transparent 100%),radial-gradient(circle at 34% 85%, var(--hero-circle) 0%, var(--hero-circle) 7%,transparent 7%, transparent 41%,transparent 41%, transparent 100%),radial-gradient(circle at 0% 36%, var(--hero-circle) 0%, var(--hero-circle) 2%,transparent 2%, transparent 59%,transparent 59%, transparent 100%),radial-gradient(circle at 42% 37%, var(--hero-circle) 0%, var(--hero-circle) 6%,transparent 6%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 48% 39%, var(--hero-circle) 0%, var(--hero-circle) 8%,transparent 8%, transparent 90%,transparent 90%, transparent 100%), var(--gradient);
       background-size: 200% 200%, 200% 200%, 200% 200%, 200% 200%, 200% 200%, 100% 100%;
       animation: move-circles 70s ease-in-out infinite;
       flex-direction: column;
@@ -67,6 +68,7 @@ export default function Header(props) {
   return Style.it(
     styles,
     <header className="gradient-bg flex-center">
+      <ThemeToggle />
       <Stack spacing="large">
         <div className="profile-container flex-center">
           <img className="header-img" src={props.imgdir} alt="Sita Robinson" />

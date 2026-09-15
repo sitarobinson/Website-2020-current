@@ -2,7 +2,7 @@ import { ProjectCard, SocialBox } from "../export-components";
 import { projectGroup } from "../../utils/projects-content-utils";
 
 const socialBoxProps = {
-  fill: "var(--dark-purple)",
+  fill: "var(--heading)",
   width: 1.25,
   height: 1.25,
   className: "social-box"

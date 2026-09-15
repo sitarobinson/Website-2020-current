@@ -50,7 +50,7 @@ export default function TravelMap({ locations }) {
     
     .legend-label {
       font-size: 0.9rem;
-      color: var(--brown);
+      color: var(--text);
     }
   `;
 

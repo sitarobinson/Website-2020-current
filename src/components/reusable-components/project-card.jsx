@@ -5,7 +5,7 @@ export default function ProjectCard(props) {
   const styles = `
     .project-card h2 {
         text-align: center;
-        color: var(--brown);
+        color: var(--text);
     }
 
     .project-card {

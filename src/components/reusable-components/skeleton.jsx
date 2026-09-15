@@ -1,15 +1,15 @@
 import Style from "style-it";
 
-//A single shimmering placeholder bar.  The tone sits between --white and --grey so
+//A single shimmering placeholder bar.  The tone sits between --surface and --panel so
 //it stays visible both inside a white card and on the grey content panel.
 export function Skeleton({ height = "1rem", width = "100%", radius = "0.5rem", aspect }) {
   const styles = `
     .skeleton {
-      background-color: #e4e8f0;
+      background-color: var(--skeleton);
       background-image: linear-gradient(
         90deg,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.75) 50%,
+        var(--skeleton-shine) 50%,
         rgba(255, 255, 255, 0) 100%
       );
       background-size: 200% 100%;
@@ -50,7 +50,7 @@ const LINE_WIDTHS = ["100%", "96%", "88%", "99%", "82%", "94%", "90%", "70%"];
 export function SkeletonCard({ lines = 8, media = false }) {
   const styles = `
     .skeleton-card {
-      background: var(--white);
+      background: var(--surface);
       border-radius: 1rem;
       box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
       flex: 1;
