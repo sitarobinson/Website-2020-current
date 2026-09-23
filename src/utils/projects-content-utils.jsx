@@ -22,7 +22,7 @@ export const projectsContent = [
     socialBoxOptions: [
       {
         icon: "code",
-        url: "https://github.com/pinkdragon1000/Bay-Benedict-Restaurant",
+        url: "https://github.com/sitarobinson/Bay-Benedict-Restaurant",
         label: "Bay Benedict Restaurant Github code",
       },
       {
@@ -48,7 +48,7 @@ export const projectsContent = [
     socialBoxOptions: [
       {
         icon: "code",
-        url: "https://github.com/pinkdragon1000/FamilyTree",
+        url: "https://github.com/sitarobinson/FamilyTree",
         label: "Family Tree Github code",
       },
       {
@@ -71,7 +71,7 @@ export const projectsContent = [
     socialBoxOptions: [
       {
         icon: "code",
-        url: "https://github.com/pinkdragon1000/Snailand",
+        url: "https://github.com/sitarobinson/Snailand",
         label: "Snailand Github code",
       },
       {
@@ -96,7 +96,7 @@ export const projectsContent = [
     socialBoxOptions: [
       {
         icon: "code",
-        url: "https://github.com/pinkdragon1000/Fin",
+        url: "https://github.com/sitarobinson/Fin",
         label: "Fin Github code",
       },
     ],
@@ -137,7 +137,7 @@ export const projectsContent = [
     socialBoxOptions: [
       {
         icon: "code",
-        url: "https://github.com/pinkdragon1000/Zesty",
+        url: "https://github.com/sitarobinson/Zesty",
         label: "Zesty Github code",
       },
       {
