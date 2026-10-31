@@ -31,7 +31,7 @@ export default function NavbarandContent(props) {
 
     .tab-list-active {
         font-weight: 600;
-        border-bottom: 0.2rem solid var(--accent);
+        border-bottom: 0.2rem solid var(--gold);
         border-radius: 0.4rem;
         color: var(--heading);
     }

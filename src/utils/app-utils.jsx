@@ -18,7 +18,7 @@ const PhotosContent = lazy(() =>
 
 //Data used for the header.
 export const headerData = {
-  imgdir: "../me.png",
+  imgdir: "../me.webp",
   header: "Sita Robinson",
   subheader: "Software Developer",
 };

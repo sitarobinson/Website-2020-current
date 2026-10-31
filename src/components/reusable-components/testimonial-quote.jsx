@@ -19,7 +19,7 @@ export default function TestimonialQuote({ testimonial, employer }) {
   const styles = `
     .testimonial-quote {
       margin: 0 0 0 0.75rem;
-      border-left: 0.1875rem solid var(--accent);
+      border-left: 0.1875rem solid var(--gold);
       padding-left: 0.75rem;
     }
 

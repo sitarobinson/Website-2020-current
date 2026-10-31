@@ -1,31 +1,18 @@
 import Style from "style-it";
 import { Stack, ThemeToggle } from "../export-components";
+import HeroFlowers from "./hero-flowers";
 
 export default function Header(props) {
   const styles = `
-    @keyframes move-circles {
-      0%, 100% {
-        background-position: 38% 55%, 34% 85%, 0% 36%, 42% 37%, 48% 39%;
-      }
-      25% {
-        background-position: 60% 70%, 20% 60%, 80% 50%, 30% 20%, 70% 80%;
-      }
-      50% {
-        background-position: 15% 40%, 75% 30%, 45% 80%, 85% 65%, 25% 15%;
-      }
-      75% {
-        background-position: 50% 25%, 40% 90%, 10% 60%, 65% 45%, 80% 55%;
-      }
-    }
-
     .gradient-bg {
       position: relative;
       padding: 2rem 1.5rem;
       min-width: 38.625rem;
-      background-image: radial-gradient(circle at 38% 55%, var(--hero-circle) 0%, var(--hero-circle) 23%,transparent 23%, transparent 78%,transparent 78%, transparent 100%),radial-gradient(circle at 34% 85%, var(--hero-circle) 0%, var(--hero-circle) 7%,transparent 7%, transparent 41%,transparent 41%, transparent 100%),radial-gradient(circle at 0% 36%, var(--hero-circle) 0%, var(--hero-circle) 2%,transparent 2%, transparent 59%,transparent 59%, transparent 100%),radial-gradient(circle at 42% 37%, var(--hero-circle) 0%, var(--hero-circle) 6%,transparent 6%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 48% 39%, var(--hero-circle) 0%, var(--hero-circle) 8%,transparent 8%, transparent 90%,transparent 90%, transparent 100%), var(--gradient);
-      background-size: 200% 200%, 200% 200%, 200% 200%, 200% 200%, 200% 200%, 100% 100%;
-      animation: move-circles 70s ease-in-out infinite;
+      background-image: var(--gradient);
+      isolation: isolate;
+      overflow: hidden;
       flex-direction: column;
+      border-bottom: 0.1875rem solid var(--gold);
     }
 
     .profile-container {
@@ -36,7 +23,7 @@ export default function Header(props) {
       width: 7.5rem;
       height: 7.5rem;
       border-radius: 50%;
-      border: 0.25rem solid rgba(255, 255, 255, 0.2);
+      border: 0.1875rem solid var(--gold);
       box-shadow: 
         0 0.5rem 2rem rgba(0, 0, 0, 0.3),
         0 0 0 0.0625rem rgba(255, 255, 255, 0.1);
@@ -68,6 +55,7 @@ export default function Header(props) {
   return Style.it(
     styles,
     <header className="gradient-bg flex-center">
+      <HeroFlowers />
       <ThemeToggle />
       <Stack spacing="large">
         <div className="profile-container flex-center">

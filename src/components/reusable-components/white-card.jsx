@@ -4,6 +4,7 @@ export default function WhiteCard({ children, className = "" }) {
     const styles = `
     .white-card {
       background: var(--surface);
+      border: 0.0625rem solid var(--card-border);
       border-radius: 1rem;
       padding: 1.5rem;
       box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
